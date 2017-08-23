@@ -1,0 +1,17 @@
+<nav>
+    <div class="nav-wrapper blue">
+        &ensp;&ensp;<a href="/" class="brand-logo"><i class="large material-icons"></i>Who_I_am!</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li {%if p_rooms %}class="active" {% endif %}><a href="/">生成</a></li>
+            <li {%if p_rooms %}class="active" {% endif %}><a href="/about">关于</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <div class="charthead">
+                <h1>Who_I_am</h1>
+            </div>
+            <li {%if p_rooms %}class="active" {% endif %}><a href="/">生成</a></li>
+            <li {%if p_rooms %}class="active" {% endif %}><a href="/about">关于</a></li>
+        </ul>
+    </div>
+</nav>
